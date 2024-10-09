@@ -8,7 +8,7 @@ RUN apt-get update && \
   apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/Luffy2ndAccount/Zokou-english-v  /root/Zokou_BOt
+RUN git clone https://github.com/kurameshinatsuki/Zokou-VE /root/Zokou_BOt
 WORKDIR /root/Zokou_Bot/
 
 
@@ -18,6 +18,6 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 5000
+EXPOSE 10000
 
 CMD ["npm", "run" , "web"]
